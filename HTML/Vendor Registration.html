@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+  <title>Vendor Registration</title>
+  <link rel="stylesheet" type="text/css" href="../css/Vendor Registration.css">
+  <script>
+    function validate() {
+      FirstName = document.getElementById("Fname").value;
+      LastName = document.getElementById("Lname").value;
+      Email = document.getElementById("email").value;
+      Password = document.getElementById("password").value;
+      Mobile = document.getElementById("mob").value;
+      if (FirstName == "" || LastName == "" || Email == "" || Password == "" || Mobile == "") {
+        alert("Form should be filled completely.");
+      }
+      else {
+        if (confirm("Do you want to Register?") == true) {
+          alert("Account Created");
+        }
+      }
+      if (Password.length <= 8) {
+        alert("Password should contain atleast 8 characters");
+      }
+      if (Mobile.length != 10) {
+        alert("Phone should contain 10 digits");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Vendor Registration</h1>
+  <img src="../Images/user.png" class="i1">
+  <h2>Vendor Information</h2>
+  <form action="">
+    <label>First Name</label>
+    <br>
+    <br>
+    <input type="text" id="Fname" value="">
+    <br>
+    <br>
+    <label>Last Name</label>
+    <br>
+    <br>
+    <input type="text" id="Lname" value="">
+    <br>
+    <br>
+    <label>Email</label>
+    <br>
+    <br>
+    <input type="email" id="email" value="">
+    <br>
+    <br>
+    <label>Password</label>
+    <br>
+    <br>
+    <input type="password" id="password" value="" minlength="8">
+    <br>
+    <br>
+    <label>Phone</label>
+    <br>
+    <br>
+    <input type="tel" id="mob" minlength="10" maxlength="10">
+    <br>
+    <br>
+    <button onclick="validate()">Lets Register</button>
+  </form>
+</body>
+</html>
