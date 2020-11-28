@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <title>Vendor Login</title>
+  <link rel="stylesheet" type="text/css" href="../css/Vendor Login.css">
+</head>
+<body>
+  <script>
+    function validate() {
+      User = document.getElementById("Uname").value;
+      Password = document.getElementById("password").value;
+      if (User == "" || Password == "") {
+        alert("Credentials must be filled completely");
+        Link.preventDefault();
+        }
+      if (Password.length <= 8) {
+        alert("Password should contain atleast 8 characters");
+      }
+    }
+  </script>
+  <img src="../Images/logo.png" class="i1">
+  <h1>Log in as a Vendor</h1>
+  <form action="">
+    <input type="text" placeholder="Username" id="Uname">
+    <br>
+    <br>
+    <input type="password" placeholder="Password" id="password" minlength="8">
+    <br>
+    <br>
+    <button onclick="validate()" class="button-login" id="btn">Log in</button>
+    <br>
+    <br>
+    <button class="button-forgot">Forgot Password?</button>
+    <br>
+    <br>
+    <label>OR</label>
+    <br>
+    <br>
+    <a href="Vendor Registration.html">Register
+      Now</a>
+    </form>
+</body>
+</html>
