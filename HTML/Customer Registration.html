@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Registration</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/Customer Registration.css">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="Javascript.js"></script>
+</head>
+<body>
+  <script>
+    function validate() {
+      FirstName = document.getElementById("Fname").value;
+      LastName = document.getElementById("Lname").value;
+      Email = document.getElementById("email").value;
+      Password = document.getElementById("password").value;
+      Mobile = document.getElementById("mob").value;
+      City = document.getElementById("city").value;
+      PostalCode = document.getElementById("code").value;
+      Address = document.getElementById("address").value;
+      if (FirstName == "" || LastName == "" || Email == "" || Password == "" || Mobile == "" || City == "" || PostalCode == "" || Address == "") {
+        alert("Form should be filled completely.");
+      }
+      else {
+        if (confirm("Do you want to Register?") == true) {
+          alert("Account Created");
+
+        }
+      }
+      if (Password.length <= 8) {
+        alert("Password should contain atleast 8 characters");
+      }
+      if (Mobile.length != 10) {
+        alert("Phone should contain 10 digits");
+      }
+      if (PostalCode.length != 6) {
+        alert("Postal Code should contain 6 characters");
+      }
+    }
+  </script>
+  <h1>Customer Registration</h1>
+  <img src="../Images/user.png" class="i1">
+  <h2>Customer Information</h2>
+  <form action="" onsubmit="signUp()">
+    <label>First Name</label>
+    <br>
+    <br>
+    <input type="text" id="Fname" value="">
+    <br>
+    <br>
+    <label>Last Name</label>
+    <br>
+    <br>
+    <input type="text" id="Lname" value="">
+    <br>
+    <br>
+    <label>Email</label>
+    <br>
+    <br>
+    <input type="email" id="email" value="">
+    <br>
+    <br>
+    <label>Password</label>
+    <br>
+    <br>
+    <input type="password" id="password" value="" minlength="8">
+    <br>
+    <br>
+    <label>Phone</label>
+    <br>
+    <br>
+    <input type="tel" id="mob" minlength="10" maxlength="10">
+    <br>
+    <br>
+    <h2>Billing Address</h2>
+    <label>City</label>
+    <label class="state">State</label>
+    <br>
+    <br>
+    <input type="text" class="city" id="city" value="">
+    <select>
+      <option>Quebec</option>
+      <option>Ontario</option>
+      <option>British Columbia</option>
+      <option>Prince Edward Island</option>
+      <option>Alberta</option>
+      <option>Manitoba</option>
+      <option>Nova Scotia</option>
+      <option>New Brunswick</option>
+      <option>Newfoundland and Labrador</option>
+      <option>Saskatchewan</option>
+    </select>
+    <br>
+    <br>
+    <label class="zip">Postal Code</label>
+    <br>
+    <br>
+    <input type="text" class="pc" id="code" minlength="6" maxlength="6">
+    <br>
+    <br>
+    <label>Street Address</label>
+    <br>
+    <br>
+    <input type="text" id="address" value="">
+    <br>
+    <br>
+    <button onclick="validate()">Lets Register</button>
+  </form>
+</body>
+</html>
