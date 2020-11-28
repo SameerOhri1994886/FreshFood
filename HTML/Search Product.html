@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <title>Search Product</title>
+  <link rel="stylesheet" type="text/css" href="../css/Search Product.css">
+</head>
+<body>
+  <script>
+    function validate() {
+      Search = document.getElementById("search").value;
+      if (Search == "") {
+        alert("Please enter any item to search");
+      }
+    }
+    function myFunction() {
+      if (confirm("Do you want to logout?") == true)
+      {
+        document.getElementById('logout').href = "Home Page.html";
+      }
+      else {
+        document.getElementById('logout').href = "Search Product.html";
+           }
+    }
+    </script>
+  <img src="../Images/logo.png" class="i1">
+  <h1>Welcome</h1>
+  <div class="images">
+    <img src="../Images/cart.jpg" class="i2">
+    <img src="../Images/user.png" class="i3">
+    <img src="../Images/help.png" class="i4">
+    <a id="logout" href="Home Page.html">
+      <img src="../Images/logout.png" class="i5" onclick="myFunction()">
+    </a>
+  </div>
+  <div class="navbar">
+    <a href="Home Page.html">Home</a>
+    <a href="">Deals</a>
+    <a href="">Best Sellers</a>
+    <div class="dropdown">
+      <button class="dropbtn">Products
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Fruits.html">Fruits</a>
+        <a href="Vegetables.html">Vegetables</a>
+        <a href="Bakery.html">Bakery</a>
+        <a href="Dairy&Eggs.html">Dairy & Eggs</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <input type="search" placeholder="Search Product" id="search">
+  <br>
+  <button onclick="validate()">Search</button>
+</body>
+</html>

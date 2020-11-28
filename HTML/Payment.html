@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  <title>Payment</title>
+  <link rel="stylesheet" type="text/css" href="../css/Payment.css">
+</head>
+<body>
+  <script>
+    function validate() {
+      Name = document.getElementById("name").value;
+      Ccn = document.getElementById("ccn").value;
+      Cvv = document.getElementById("cvv").value;
+      ExpiryDate = document.getElementById("exp").value;
+      if (Name == "" || Ccn == "" || Cvv == "" || ExpiryDate == ""||Ccn.length != 16||Cvv.length != 3) {
+        alert("Form should be filled completely and correctly.");
+      }
+      else {
+        if (confirm("Do you want to confirm your order?") == true) {
+          alert("Order Confirmed");
+          document.getElementById('con').href = "Booking Confirmation.html"
+        }
+      }
+      // if (Ccn.length != 16) {
+      //   alert("Card Number must contain 16 digits");
+      // }
+      // if (Cvv.length != 3) {
+      //   alert("Cvv must contain 3 digits");
+      // }
+    }
+    function go() {
+      if (confirm("Do you want to confirm your order?") == true)
+      if (document.getElementById('r1').checked) {
+        location.href = 'Booking Confirmation.html';
+        }
+      }
+  </script>
+  <h1>Payment Center</h1>
+  <section>
+    <h2>Payment Method</h2>
+    <input type="radio" name="where" id="r1" value="1" onclick="go()">
+    <label>Cash on Delivery</label>
+    <input type="radio" name="where" value="2">
+    <label>Credit Card/Debit Card</label>
+    <br>
+  </section>
+  <div class="sec">
+    <h2>Fill the following fields for Payment by Card</h2>
+    <h3>Card Details</h3>
+    <br>
+    <img src="../Images/mastercard.png" class="i1">
+    <input type="radio" name="where" value="1">
+    <img src="../Images/visa.png" class="i2">
+<input type="radio" name="where" value="2" class="radio">
+    <br>
+    <br>
+    <label>CardHolder Name</label>
+    <br>
+    <br>
+    <input type="text" value="" id="name" required>
+    <br>
+    <br>
+    <label>Card Number</label>
+    <br>
+    <br>
+    <input type="tel" id="ccn" minlength="16" maxlength="16" name="ccn" required>
+    <br>
+    <br>
+    <label>CVV</label>
+    <br>
+    <br>
+    <input type="tel" id="cvv" minlength="3" maxlength="3" name="cvv" required>
+    <br>
+    <br>
+    <label>Card Expiry Date</label>
+    <br>
+    <br>
+    <input type="month" id="exp" name="exp" required>
+    <br>
+    <br>
+  </div>
+  <a href="" onclick="validate()" id="con">Confirm Order</a>
+</body>
+</html>
