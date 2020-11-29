@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <title>Adding Product by Vendor</title>
+  <link rel="stylesheet"type="text/css"href="../css/Add Product.css">
+</head>
+<body>
+    <script>
+        function myFunction()
+        {
+            if (confirm("Do you want to logout?") == true)
+      {
+        document.getElementById('logout').href = "Home Page.html";
+      }
+      else {
+        document.getElementById('logout').href = "Add Product.html";
+           }
+    }
+        function validate()
+        {
+            Qty=document.getElementById("qty").value;
+            if(Qty=="")
+            {
+                alert("Please enter the quantity of Product");
+            }
+            else
+            {
+                alert("Product added");
+            }
+        }
+    </script>
+    <h1>Welcome</h1>
+    <br>
+    <br>
+    <div class="images">
+       <img src="../Images/help.png"class="i4">
+        <a id="logout"href="Home Page.html">
+            <img src="../Images/logout.png"class="i5"onclick="myFunction()">
+        </a>
+    </div>
+    <h2>Type of Product</h2>
+    <select>
+        <option>Bakery</option>
+        <option>Fruits</option>
+        <option>Vegetables</option>
+        <option>Dairy&Eggs</option>
+    </select>
+    <br>
+    <br>
+    <label>Quantity :</label>
+    <br>
+    <br>
+    <input type="number"id="qty"min="1">
+    <br>
+    <br>
+    <button onclick="validate()">Add Product</button>
+ </body>
+ </html>   
