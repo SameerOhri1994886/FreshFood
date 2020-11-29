@@ -1,0 +1,29 @@
+body {
+    background-image: url("../Images/Grocery.jpg");
+    background-repeat: no-repeat;
+    background-position: 450px;
+    background-size: 500px 580px;
+}
+.i1 {
+    width: 70px;
+    height: 50px;
+}
+h1 {
+    margin-top: 50px;
+    margin-left: 570px;
+    font-family: cursive;
+    font-style: bold;
+}
+h2 {
+    font-family: cursive;
+}
+label {
+    font-family: cursive;
+}
+button {
+    background-color: lightgreen;
+    margin-top: 70px;
+    margin-left: 650px;
+    border-radius: 30px;
+    font-family: cursive;
+}
