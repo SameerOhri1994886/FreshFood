@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<head>
+  <title>Fruits</title>
+  <link rel="stylesheet" type="text/css" href="../css/Fruits.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <script>
+    function validate() {
+      Qty = document.getElementById("qt").value;
+      if (Qty == "") {
+        alert("Please enter quantity");
+      }
+    }
+  </script>
+  <h1>Fruits</h1>
+  <div class="card">
+    <img src="../Images/fruits/apple.png" style="width:100%">
+    <h1>Apple</h1>
+    <p class="price">$0.86 avg. ea. (170 g avg.)
+      $5.05 /kg$2.29 /lb.</p>
+    <label>QTY</label>
+    <input type="number" class="qty" id="qt" min="1">
+    <button onclick="validate()" id="myBtn">Add to Cart</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Item Added to Cart</h2>
+        </div>
+        <div class="modal-body">
+          <p>You added Apple in your cart</p>
+        </div>
+       </div>
+      </div>
+  </div>
+  <div class="card">
+    <img src="../Images/fruits/banana.png" style="width:100%">
+    <h1>Banana</h1>
+    <p class="price">$3.75</p>
+    <label>QTY</label>
+    <input type="number" class="qty" id="qty" min="1">
+    <button id="myBtn1">Add to Cart</button>
+    <div id="myModal1" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close1">&times;</span>
+          <h2>Item Added to Cart</h2>
+        </div>
+        <div class="modal-body">
+          <p>You added Banana in your cart</p>
+        </div>
+       </div>
+      </div>
+  </div>
+  <div class="card">
+    <img src="../Images/fruits/orange.png" style="width:100%">
+    <h1>Orange </h1>
+    <p class="price">4/$3.00
+      $0.75 /un.</p>
+    <label>QTY</label>
+    <input type="number" class="qty" id="qty" min="1">
+    <button id="myBtn2">Add to Cart</button>
+    <div id="myModal2" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close2">&times;</span>
+          <h2>Item Added to Cart</h2>
+        </div>
+        <div class="modal-body">
+          <p>You added Orange in your cart</p>
+        </div>
+       </div>
+      </div>
+    </div>
+  <div class="card">
+    <img src="../Images/fruits/kiwi.png" style="width:100%">
+    <h1>Kiwi</h1>
+    <p class="price">$0.99</p>
+    <label>QTY</label>
+    <input type="number" class="qty" id="qty" min="1">
+    <button id="myBtn3">Add to Cart</button>
+    <div id="myModal3" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close3">&times;</span>
+          <h2>Item Added to Cart</h2>
+        </div>
+        <div class="modal-body">
+          <p>You added Kiwi in your cart</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="../Images/fruits/watermelon.png" style="width:100%">
+    <h1>Watermelon</h1>
+    <p class="price">$4.99</p>
+    <label>QTY</label>
+    <input type="number" class="qty" id="qty" min="1">
+    <button id="myBtn4">Add to Cart</button>
+    <div id="myModal4" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close4">&times;</span>
+          <h2>Item Added to Cart</h2>
+        </div>
+        <div class="modal-body">
+          <p>You added Watermelon in your cart</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    var modal1 = document.getElementById("myModal1");
+    var btn1 = document.getElementById("myBtn1");
+    var span = document.getElementsByClassName("close1")[0];
+    btn1.onclick = function () {
+      modal1.style.display = "block";
+    }
+    span.onclick = function () {
+      modal1.style.display = "none";
+    }
+    window.onclick = function (event) {
+      if (event.target == modal1) {
+        modal1.style.display = "none";
+      }
+    }
+    var modal2 = document.getElementById("myModal2");
+    var btn2 = document.getElementById("myBtn2");
+    var span = document.getElementsByClassName("close2")[0];
+    btn2.onclick = function () {
+      modal2.style.display = "block";
+    }
+    span.onclick = function () {
+      modal2.style.display = "none";
+    }
+    window.onclick = function (event) {
+      if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+    }
+    var modal3 = document.getElementById("myModal3");
+    var btn3 = document.getElementById("myBtn3");
+    var span = document.getElementsByClassName("close3")[0];
+    btn3.onclick = function () {
+      modal3.style.display = "block";
+    }
+    span.onclick = function () {
+      modal3.style.display = "none";
+    }
+    window.onclick = function (event) {
+      if (event.target == modal3) {
+        modal3.style.display = "none";
+      }
+    }
+    var modal4 = document.getElementById("myModal4");
+    var btn4 = document.getElementById("myBtn4");
+    var span = document.getElementsByClassName("close4")[0];
+    btn4.onclick = function () {
+      modal4.style.display = "block";
+    }
+    span.onclick = function () {
+      modal4.style.display = "none";
+    }
+    window.onclick = function (event) {
+      if (event.target == modal4) {
+        modal4.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
