@@ -1,0 +1,117 @@
+body {
+  background-image: url("Images/Grocery.jpg");
+  background-repeat: no-repeat;
+  background-position: 450px 350px;
+  background-size: 500px 580px;
+}
+.i1 {
+  height: 300px;
+  width: 300px;
+  margin-left: 550px;
+}
+.images {
+  margin-left: 85%;
+}
+.i2 {
+  height: 30px;
+  width: 30px;
+}
+.i3 {
+  height: 30px;
+  width: 30px;
+}
+.i4 {
+  height: 30px;
+  width: 30px;
+}
+.i5 {
+  height: 30px;
+  width: 30px;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: cursive;
+}
+input[type=text] {
+  border-radius: 30px;
+}
+input[type=search] {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: cursive;
+}
+button {
+  margin-top: 25px;
+  margin-left: 70px;
+  background-color: goldenrod;
+  font-family: cursive;
+}
+.button {
+  margin-left: 600px;
+  margin-top: 170px;
+  color: black;
+  background-color: lightgreen;
+  text-decoration: none;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-left: 1px;
+  border-right: 1px;
+  display: block;
+  width: 15%;
+  font-family: cursive;
+  text-align: center;
+}
+.navbar {
+  overflow: hidden;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: cornflowerblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: cursive;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: aquamarine;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: cornflowerblue;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: cursive;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightgray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: cursive;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: lightblue;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}

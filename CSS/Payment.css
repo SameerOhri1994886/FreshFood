@@ -1,0 +1,65 @@
+body {
+    background-image: url("../Images/Grocery.jpg");
+    background-repeat: no-repeat;
+    background-position: 450px 225px;
+    background-size: 525px 580px;
+}
+section {
+    background-color: darkgray;
+}
+h1 {
+    text-align: center;
+    font-family: cursive;
+}
+h2 {
+    text-align: center;
+    font-family: cursive;
+}
+h3 {
+    font-family: cursive;
+}
+.sec {
+    background-color: cornsilk;
+    background-image: url("../Images/Grocery.jpg");
+    background-repeat: no-repeat;
+    background-position: 450px 80px;
+    background-size: 500px 550px;
+}
+.i1 {
+    height: 30px;
+    width: 30px;
+}
+.i2 {
+    height: 30px;
+    width: 30px;
+    margin-left: 50px;
+}
+label {
+    font-family: cursive;
+}
+input[type=text] {
+    font-family: cursive;
+}
+#ccn {
+    width: 150px;
+    font-family: cursive;
+}
+#cvv {
+    width: 50px;
+    font-family: cursive;
+}
+a {
+    margin-top: 75px;
+    margin-left: 650px;
+    color: black;
+    background-color: goldenrod;
+    text-decoration: none;
+    border-top: 100px;
+    border-bottom: 30px;
+    border-left: 30px;
+    border-right: 100px;
+    display: block;
+    width: 9%;
+    text-align: center;
+    font-family: cursive;
+}
