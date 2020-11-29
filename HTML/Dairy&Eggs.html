@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>
+  <title>Dairy & Eggs</title>
+  <link rel="stylesheet" type="text/css" href="../css/Dairy&Eggs.css">
+</head>
+<body>
+  <h1>Dairy & Eggs</h1>
+  <div class="card">
+    <img src="../Images/dairy/eggs.png" style="width:100%">
+    <h1>Eggs</h1>
+    <p class="price">$2.99</p>
+    <label>QTY</label>
+    <input type="number" class="qty" min="1">
+    <button id="myBtn">Add to Cart</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Item Added to Cart</h2>
+        </div>
+        <div class="modal-body">
+          <p>You added Eggs in your cart</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="../Images/dairy/butter.png" style="width:100%">
+    <h1>Butter</h1>
+    <p class="price">$4.69 ea.
+      $1.03 /100g</p>
+    <p>CREAM, SALT.
+    </p>
+    <label>QTY</label>
+    <input type="number" class="qty" min="1">
+    <button id="myBtn1">Add to Cart</button>
+    <div id="myModal1" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close1">&times;</span>
+          <h2>Item Added to Cart</h2>
+        </div>
+        <div class="modal-body">
+          <p>You added Butter in your cart</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="../Images/dairy/custard.png" style="width:100%">
+    <h1>Custard </h1>
+    <p class="price">$3.99 ea.
+      $0.84 /100ml</p>
+    <p>MILK, SUGAR, CARBOXYMETHYL CELLULOSE MONO ET DIGLYCERIDES, GOMME DE GUAR, SODIUM ALGINATE, CARRAGEENAN,
+      ARTIFICIAL FLAVOUR, COLOUR.
+    </p>
+    <label>QTY</label>
+    <input type="number" class="qty" min="1">
+    <button id="myBtn2">Add to Cart</button>
+    <div id="myModal2" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close2">&times;</span>
+          <h2>Item Added to Cart</h2>
+        </div>
+        <div class="modal-body">
+          <p>You added Custard in your cart</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="../Images/dairy/milk.png" style="width:100%">
+    <h1>Milk</h1>
+    <p class="price">$6.68 ea.
+      $0.17 /100ml</p>
+    <p>PARTLY SKIMMED MILK, VITAMIN A PALMITATE, VITAMIN D3.</p>
+    <label>QTY</label>
+    <input type="number" class="qty" min="1">
+    <button id="myBtn3">Add to Cart</button>
+    <div id="myModal3" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close3">&times;</span>
+          <h2>Item Added to Cart</h2>
+        </div>
+        <div class="modal-body">
+          <p>You added Milk in your cart</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="../Images/dairy/swiss cheese.png" style="width:100%">
+    <h1>Swiss Cheese</h1>
+    <p class="price">$4.49 ea.
+      $1.80 /100g</p>
+    <p>PASTEURIZED PARTLY SKIMMED MILK, SALT, BACTERIAL CULTURE, CALCIUM CHLORIDE, MICROBIAL ENZYME, PROPIONIC CULTURE.
+    </p>
+    <label>QTY</label>
+    <input type="number" class="qty" min="1">
+    <button id="myBtn4">Add to Cart</button>
+    <div id="myModal4" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close4">&times;</span>
+          <h2>Item Added to Cart</h2>
+        </div>
+        <div class="modal-body">
+          <p>You added Swiss Cheese in your cart</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="../Images/dairy/mozzarella cheese.png" style="width:100%">
+    <h1>Mozzarella Cheese</h1>
+    <p class="price">$4.49 ea.
+      $1.66 /100g</p>
+    <p>PASTEURIZED PARTLY SKIMMED MILK, MODIFIED MILK INGREDIENTS, BACTERIAL CULTURE, SALT, CALCIUM CHLORIDE, MICROBIAL
+      ENZYME.
+    </p>
+    <label>QTY</label>
+    <input type="number" class="qty" min="1">
+    <button id="myBtn5">Add to Cart</button>
+    <div id="myModal5" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close5">&times;</span>
+          <h2>Item Added to Cart</h2>
+        </div>
+        <div class="modal-body">
+          <p>You added Mozzarella Cheese in your cart</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    var modal1 = document.getElementById("myModal1");
+    var btn1 = document.getElementById("myBtn1");
+    var span = document.getElementsByClassName("close1")[0];
+    btn1.onclick = function () {
+      modal1.style.display = "block";
+    }
+    span.onclick = function () {
+      modal1.style.display = "none";
+    }
+    window.onclick = function (event) {
+      if (event.target == modal1) {
+        modal1.style.display = "none";
+      }
+    }
+    var modal2 = document.getElementById("myModal2");
+    var btn2 = document.getElementById("myBtn2");
+    var span = document.getElementsByClassName("close2")[0];
+    btn2.onclick = function () {
+      modal2.style.display = "block";
+    }
+    span.onclick = function () {
+      modal2.style.display = "none";
+    }
+    window.onclick = function (event) {
+      if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+    }
+    var modal3 = document.getElementById("myModal3");
+    var btn3 = document.getElementById("myBtn3");
+    var span = document.getElementsByClassName("close3")[0];
+    btn3.onclick = function () {
+      modal3.style.display = "block";
+    }
+    span.onclick = function () {
+      modal3.style.display = "none";
+    }
+    window.onclick = function (event) {
+      if (event.target == modal3) {
+        modal3.style.display = "none";
+      }
+    }
+    var modal4 = document.getElementById("myModal4");
+    var btn4 = document.getElementById("myBtn4");
+    var span = document.getElementsByClassName("close4")[0];
+    btn4.onclick = function () {
+      modal4.style.display = "block";
+    }
+    span.onclick = function () {
+      modal4.style.display = "none";
+    }
+    window.onclick = function (event) {
+      if (event.target == modal4) {
+        modal4.style.display = "none";
+      }
+    }
+    var modal5 = document.getElementById("myModal5");
+    var btn5 = document.getElementById("myBtn5");
+    var span = document.getElementsByClassName("close5")[0];
+    btn5.onclick = function () {
+      modal5.style.display = "block";
+    }
+    span.onclick = function () {
+      modal5.style.display = "none";
+    }
+    window.onclick = function (event) {
+      if (event.target == modal5) {
+        modal5.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
