@@ -1,0 +1,55 @@
+.i1 {
+    margin-top: 10px;
+    margin-left: 550px;
+    height: 270px;
+    width: 300px;
+}
+h1 {
+    margin-left: 570px;
+    font-family: cursive;
+}
+form {
+    margin-top: 50px;
+    margin-left: 600px;
+}
+input[type=text] {
+    margin-left: 10px;
+    border-color: darkblue;
+    height: 30px;
+    font-family: cursive;
+}
+input[type=password] {
+    border-color: darkblue;
+    height: 30px;
+    margin-left: 10px;
+    font-family: cursive;
+}
+.button-login {
+    margin-left: 10px;
+    background-color: goldenrod;
+    width: 153px;
+    font-family: cursive;
+}
+.button-forgot {
+    margin-left: 10px;
+    background-color: rgb(196, 86, 86);
+    width: 153px;
+    font-family: cursive;
+}
+label {
+    margin-left: 70px;
+}
+a {
+    margin-left: 10px;
+    color: black;
+    background-color: goldenrod;
+    text-decoration: none;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    display: block;
+    width: 19%;
+    text-align: center;
+    font-family: cursive;
+}
